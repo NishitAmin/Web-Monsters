@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+    <link href="css/json.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <div class="navbar">
+        <img height="50" src="img/logo.PNG">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="javascript.html">Javascript</a></li>
+            <li><a href="jquery.html">JQuery</a></li>
+            <li><a href="xml.html">XML</a></li>
+            <li><a href="json.html">JSON</a></li>
+        </ul>
+    </div>
+</header>
+<hr class="navbarHR">
+<div class="sideNav">
+    <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#concepts">Concepts</a></li>
+        <li><a href="#adv">Advantage</a></li>
+        <li><a href="#disadv">Disadvantage</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#prog">Program examples</a></li>
+    </ul>
+</div>
+<div class="content">
+    <!-- INTRODUCTION SECTION -->
+    <a id="introduction"></a>
+    <span class="contentHeader">JSON</span>
+    <br>
+    <br>
+    <img height="200" src="img/json.png">
+    <p class="contentData">
+        <ul style="list-style-type: square">
+        <li>JSON is <b>J</b>ava<b>S</b>cript <b>O</b>bject <b>N</b>otation. </li>
+        <li>JSON is a syntax for storing and exchanging data.</li>
+        <li>JSON is a text, written with Javascript object notation.</li>
+        <li>JSON is a lightweight text based data-interchange format.</li>
+        <li>Completely language independent.</li>
+        <li>Based on a subset of the JavaScript Programming Language.</li><br>
+        <h2>JSON is NOT</h2>
+        </ul>
+        <ul style="list-style-type: square">
+            <li>Overly Complex</li>
+            <li>A "document" format</li>
+            <li>A markup language</li>
+            <li>A programming language</li>
+        </ul>
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Why not JSON?</h2>
+        <ul style="list-style-type: square">
+                <li>Straightforward syntax</li>
+                <li>Easy to create and manipulate</li>
+                <li>Can be natively parsed in JavaScript using <b>eval()</b></li>
+                <li>Supported by all major JavaScript frameworks</li>
+                <li>Supported by most backend technologies</li>
+            </ul><br>
+        <h2>Exchanging Data</h2>
+        When exchanging data between a browser and a server, the data can only be text.            
+            JSON is text, and we can convert any JavaScript object into JSON, and send JSON to the server.
+            We can also convert any JSON received from the server into JavaScript objects.
+            This way we can work with the data as JavaScript objects, with no complicated parsing and translations.<br><br>
+        <h2>Why use JSON?</h2>
+            Since the JSON format is text only, it can easily be sent to and from a server, and used as a data format by any programming language.
+            JavaScript has a built in function to convert a string, written in JSON format, into native JavaScript objects:
+            JSON.parse()
+            So, if you receive data from a server, in JSON format, you can use it like any other JavaScript object.            
+    </p>
+    <!--------------------------------->
+
+    <!--Some Main Concepts  -->
+    <a id="concepts"></a>
+    <span class="contentHeader">Concepts</span>
+    <ol>
+        <li><span class="listTitle">JSON syntax</span>
+            <p class="contentData">Let's have a quick look at the basic syntax of JSON. 
+                    JSON syntax is basically considered as a subset of JavaScript syntax; it includes the following −
+                    Data is represented in name/value pairs.
+                    Curly braces hold objects and each name is followed by ':'(colon), the name/value pairs are separated by , (comma).
+                    Square brackets hold arrays and values are separated by ,(comma).
+                    Below is a simple example −
+                <br>
+                <br><img src="img/JSON Syntax.PNG   " height="300" width="400">
+                <br><br>
+            </p>
+            
+        </li>
+
+        <li><span class="listTitle">JSON Basics</span>
+            <p class="contentData">
+                <ul style="list-style-type: square">
+                    <li>Unordered sets of name/value pairs</li>
+                    <li>Begins with <b style="color: red">{</b> (left brace)</li>
+                    <li>Ends with <b style="color: red">}</b> (right brace)</li>
+                    <li>Each name is followed by <b style="color: red">:</b> (colon)</li>
+                    <li>Name/value pairs are separated by <b style="color: red">,</b> (comma)</li>
+                </ul>
+                <br><img src="img/Example-JSON.PNG" height="150" width="350">
+            
+            </p>
+        </li>
+
+        <li><span class="listTitle">JSON vs XML</span>
+            <p class="contentData">
+                Both JSON and XML can be used to receive data from a web server. The following JSON and XML examples both define an employees object, with an array of 3 employees:
+                <br>
+                <br>
+                <b>JSON example</b><br><br>
+                <img src="img/JSON example.PNG" height="150" width="500">
+                <br><br>
+                <b>XML example</b><br><br>
+                <img src="img/JSON and XML.PNG" height="300" width="600">
+                <br>
+            </p>
+        </li>
+    </ol>
+
+    <!-------------------------->
+
+    <!-- ADVANTAGES SECTION -->
+    <a id="adv"></a>
+    <span class="contentHeader">Advantages</span>
+    <p class="contentData">
+            JSON is based on the object notation of the JAVASCRIPT language and its standard only. 
+            However, it does not require JavaScript to read or write because it is made in text format which is language independent and can be run everywhere. 
+    </p>
+    <ul class="list">
+        <li><span class="listTitle">JSON is faster:&nbsp;&nbsp;&nbsp;</span></li>
+       <p class="contentData">
+            JSON syntax is very easy to use. We have to use only -> as a syntax which provides us an easy parsing of the data and faster execution of the data. 
+            Since its syntax is very small and light weighted that’s the reason that it executes the response in the faster way.
+       </p>
+
+        <li><span class="listTitle">Schema Support:&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">
+                It has the wide range of supported browser compatibility with the operating systems so the applications 
+                made with the coding of JSON doesn’t require much effort to make it all browser compatible. 
+                During development, the developer thinks for the different browsers but JSON provides that functionality.
+                Rest API Security – How secure JSON data transfer                
+        </p>
+
+        <li><span class="listTitle">Tool for sharing data:&nbsp;&nbsp;&nbsp;</span></li>
+       <p class="contentData">
+            JSON is the best tool for the sharing data of any size even audio, video etc. 
+            This is because JSON stores the data in the arrays so data transfer makes easier. 
+            For this reason, JSON is a superior file format for web APIs and for web development.
+       </p>
+
+       <li><span class="listTitle">JSON is much like XML:&nbsp;&nbsp;&nbsp;</span></li>
+       <p class="contentData">
+            <img src="img/JSON like XML.PNG" height="100" width="200"><br><br>
+            Plain text formats<br>
+            "Self-describing" (human readable)<br>
+            Hierarchical (Values can contain lists of objects or values)<br>
+       </p>
+
+       <li><span class="listTitle">JSON not like XML:&nbsp;&nbsp;&nbsp;</span></li>
+       <p class="contentData">
+            <img src="img/JSON not like.PNG" height="100" width="190"><br>
+            <ul style="list-style-type: square">
+                 <li>Lighter and faster than XML</li>
+                 <li>JSON used typed objects. All XML values are type-less strings and must be parsed at runtime.</li>
+                 <li>Less syntax, no semantics</li>
+                 <li>Properties are immediately accessible to JavaScript code</li>
+            </ul>
+       </p>
+    </ul>
+    <!------------------------------------>
+
+    <!--Disadvantage section-->
+    <a id="disadv"></a>
+    <span class="contentHeader">Disadvantage</span>
+    <p class="contentData">
+        Biggest disadvantages to a JSON are:.
+    </p>
+    <ul class="list">
+        <li><span class="listTitle">No support for grammar:&nbsp;&nbsp;&nbsp;</span></li>
+       <p class="contentData">No support for formal grammar definition, 
+           hence interface contracts are hard to communicate and enforce</p>
+
+        <li><span class="listTitle">Namespace Support:&nbsp;&nbsp;&nbsp;</span></li>
+       <p class="contentData">That is the ability to mix data intended to be read by multiple sources (or written by multiple sources) 
+           in the same document</p>
+
+        <li><span class="listTitle">JSON is limiting:&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">JSON is limiting, but that’s a good thing: JSON is limited in terms of what objects can be modeled. 
+            Some may think XML is better because more objects can be modeled and it doesn’t prohibit developers. But even though JSON prohibits developers, it is in a positive way, 
+            making the code simpler, more predictable, and easy to read</p>
+    </ul>
+    <!----------------------->
+
+    <!--Usage section-->
+    <a id="usage"></a>
+    <span class="contentHeader">Usage</span>
+    <p class="contentData">
+        Usage of JSON:
+    </p>
+    <ul class="list">
+        <li><span class="listTitle">Language Independent&nbsp;&nbsp;&nbsp;</span></li>
+       <p class="contentData"><b>JavaScript Object Notation</b> is a open-standard file format that uses human-readable 
+        text to transmit data objects consisting of attribute-value pairs and array data types. 
+        It is a very common data format used for asynchronous browser–server communication, 
+        including as a replacement for XML in some AJAX-style systems.
+       </p>
+
+        <li><span class="listTitle">Data Portability Issues&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">JSON is a strict subset of JavaScript, his specification actually allows valid JSON documents that are invalid JavaScript. 
+            Specifically, JSON allows the Unicode line terminators U+2028 LINE SEPARATOR and U+2029 PARAGRAPH SEPARATOR to appear unescaped in quoted strings, while ECMAScript 2018 and older does not.
+            <br><br>
+            <img src="img/Usage-JSON.PNG" height="100" width="275"><br>
+        </p>
+
+        <li><span class="listTitle">MIME type&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData"> 
+                The official MIME type for JSON text is "application/json", and most modern implementations have adopted this.
+                The (unofficial) MIME type "text/json" or the content-type "text/javascript" also get legacy support by many service providers, 
+                browsers, servers, web applications, libraries, frameworks, and APIs. 
+                Notable examples include the Google Search API, Yahoo!, Flickr, Facebook API, Lift framework, Dojo Toolkit 0.4, etc
+         </p>
+
+         <li><span class="listTitle">Lightweight Format&nbsp;&nbsp;&nbsp;</span></li>
+         <p class="contentData"> 
+                JSON is a lightweight format that is used for data interchanging. 
+                It is based on a subset of JavaScript language (the way objects are built in JavaScript). 
+                As stated in the MDN, some JavaScript is not JSON, and some JSON is not JavaScript.
+                An example of where this is used is web services responses. 
+                In the 'old' days, web services used XML as their primary data format for transmitting back data, 
+                but since JSON appeared, 
+                it has been the preferred format because it is much more lightweight
+          </p>
+
+          <li><span class="listTitle">JSON is built in two structures:&nbsp;&nbsp;&nbsp;</span></li>
+          <p class="contentData"> 
+            <ul style="list-style-type: circle">
+                <li>A collection of name/value pairs. In various languages, this is realized as an object, record, struct, dictionary, hash table, keyed list, or associative array.</li>
+                <li>An ordered list of values. In most languages, this is realized as an array, vector, list, or sequence.</li>  
+            </ul>  
+           </p>
+
+           <li><span class="listTitle">Applcations of JSON data format:&nbsp;&nbsp;&nbsp;</span></li>
+           <p class="contentData"> 
+             <ul style="list-style-type: circle">
+                <li>JSON data format is widely used in the programming for browser extensions and websites which are written in the JavaScript language.</li>
+                <li>JSON data format is another data format (after XML) which can be used to transmit the structured data between a client and server in the web applications.</li>
+                <li>JSON data format is frequently used in the serialization and transmission of the structured data over the network.</li>
+                <li>JSON data format is used in the programming of Web services and APIs in order to provide public data.</li>
+                <li>It is a language independent data format which widens the scope of its use with the other programming languages.</li>
+             </ul>
+             
+            <li><span class="listTitle">JSON format:&nbsp;&nbsp;&nbsp;</span></li>
+           <p class="contentData"> 
+             <ul style="list-style-type: circle">
+                <li>Transfer data to and from a server</li>
+                <li>Perform asynchronous data calls without requiring a page refresh</li>
+                <li>Working with data stores</li>
+                <li>Compile and save form or user data for local storage</li>
+             </ul> 
+            </p>
+    </ul>
+    <!----------------------->
+
+    <!--Program example section-->
+    <a id="prog"></a>
+    <span class="contentHeader">Program example</span><br>
+    <ul class="list"><br>
+
+        <li><span class="listTitle">JSON Strings&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">
+                Strings in JSON must be written in double quotes.<br><br>
+                <img src="img/Example11.PNG" height="100" width="300"><br><br>
+        </p>
+
+        <li><span class="listTitle">JSON Numbers&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">
+                Numbers in JSON must be an integer or a floating point.<br><br>
+                <img src="img/Example12.PNG" height="100" width="200"><br><br>
+        </p>
+
+        <li><span class="listTitle">JSON Arrays Basics&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">
+                Values in JSON can be arrays.<br><br>
+                <img src="img/Example13.PNG" height="200" width="1000"><br><br>
+        </p>
+
+        <li><span class="listTitle">Accessing Object Values&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">
+                You can access the object values by using dot (.) notation:<br><br>
+                <img src="img/Example3.PNG" height="80" width="700"><br><br>
+                You can also access the object values by using bracket ([]) notation:<br><br>
+                <img src="img/Example4.PNG" height="100" width="700"><br><br>
+        </p>
+
+        <li><span class="listTitle">Arrays in JSON&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">
+            <ul style="list-style-type: square">
+                <li>An ordered collections of values</li>
+                <li>Begins with <b style="color: red">[</b> (left bracket)</li>
+                <li>Ends with <b style="color: red">]</b> (right bracket)</li>
+                <li>Name/value pairs are separated by <b style="color: red">,</b> (comma)</li>
+                </ul><br><br>
+                <img src="img/JSON-Example1.PNG" height="285" width="475"><br>
+        </p>
+        <br>
+
+        <li><span class="listTitle">Nested Arrays in JSON Objects&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">
+            Values in an array can also be another array, or even another JSON object:
+        </p>
+        <img src="img/Nested Array.PNG" height="225" width="675">
+        <br>
+        <br>
+
+        <li><span class="listTitle">Looping an Object&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">
+                You can loop through object properties by using the for-in loop:<br><br>
+                <img src="img/Example6.PNG" height="120" width="700"><br><br>
+        </p>
+
+        <li><span class="listTitle">Modify Values&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">
+                You can also use the bracket notation to modify a value in a JSON object:<br><br>
+                <img src="img/Example5.PNG" height="400" width="500"><br><br>
+        </p>
+
+        <li><span class="listTitle">Delete Object Properties&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">
+                Use the <b style="color: red">delete</b> keyword to delete properties from a JSON object:<br><br>
+                <img src="img/Example7.PNG" height="400" width="500"><br><br>
+        </p>
+
+        <li><span class="listTitle">Modify Array Values&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">
+                Use the <b style="color: red">index</b> number to modify an array:<br><br>
+                <img src="img/Example8.PNG" height="400" width="600"><br><br>
+        </p>
+
+        <li><span class="listTitle">Delete Array Items&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">
+                Use the <b style="color: red">delete</b> keyword to delete items from an array:<br><br>
+                <img src="img/Example9.PNG" height="400" width="650"><br><br>
+        </p>
+
+    </ul>
+    <!----------------------->
+    </p>
+</div>
+<h3 align="center">&COPYGroup 5 - Mobile Web Dev</h3>
+</body>
+
+</html>

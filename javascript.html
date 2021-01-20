@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <link href="css/javascript.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <div class="navbar">
+        <img height="50" src="img/logo.PNG">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="javascript.html">Javascript</a></li>
+            <li><a href="jquery.html">JQuery</a></li>
+            <li><a href="xml.html">XML</a></li>
+            <li><a href="json.html">JSON</a></li>
+        </ul>
+    </div>
+</header>
+<hr class="navbarHR">
+<div class="sideNav">
+    <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#concepts">Concepts</a></li>
+        <li><a href="#adv">Advantage</a></li>
+        <li><a href="#disadv">Disadvantage</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#prog">Program examples</a></li>
+    </ul>
+</div>
+<div class="content">
+    <!-- INTRODUCTION SECTION -->
+    <a id="introduction"></a>
+    <span class="contentHeader">JavaScript</span>
+    <br>
+    <br>
+    <img height="200" src="img/javascriptjs.jpg">
+    <p class="contentData">
+        JavaScript often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions. Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it, and major web browsers have a dedicated JavaScript engine to execute it.
+    </p>
+    <!--------------------------------->
+
+    <!--Some Main Concepts  -->
+    <a id="concepts"></a>
+    <span class="contentHeader">Concepts</span>
+    <ol>
+        <li><span class="listTitle">Variable Hoisting</span>
+            <p class="contentData">Basically, when Javascript compiles all of your code, all variable declarations using <i>var</i> are hoisted/lifted to the top of their functional/local scope (if declared inside a function) or to the top of their global scope (if declared outside of a function) regardless of where the actual declaration has been made. This is what we mean by “hoisting”. Functions declarations are also hoisted, but these go to the very top, so will sit above all of the variable declarations.
+                <br>
+                <br><img src="img/hoistingEx.PNG" height="100">
+            </p>
+        </li>
+
+        <li><span class="listTitle">Scope in javascript</span>
+            <p class="contentData">
+                Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code There are two type of scope, global and local. Global scope variable are the variable which are visible to every function in the file while local scope variable are the variable which are only visible in the method.
+                <br>
+                <br>
+                <img src="img/scope.PNG" height="200">
+                <br>
+            </p>
+        </li>
+    </ol>
+
+    <!-------------------------->
+
+    <!-- ADVANTAGES SECTION -->
+    <a id="adv"></a>
+    <span class="contentHeader">Advantages</span>
+    <p class="contentData">
+        The biggest advantages to a JavaScript having a ability to produce the same result on all modern browsers.
+    </p>
+    <ul class="list">
+        <li><span class="listTitle">Client-Side execution:&nbsp;&nbsp;&nbsp;</span></li>
+       <p class="contentData">
+           No matter where you host JavaScript, Execute always on client
+           environment to save a bandwidth and make execution process fast.
+       </p>
+
+        <li><span class="listTitle">User Interface Interactivity:&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">JavaScript used to fill web page data dynamically
+            such as drop-down list for a Country and State. Base on selected Country,
+            State drop down list dynamically filled. Another one is Form validation,
+            missing/incorrect fields you can alert to a users using alert box.</p>
+
+        <li><span class="listTitle">Rapid Development:&nbsp;&nbsp;&nbsp;</span></li>
+       <p class="contentData">JavaScript syntax's are easy and flexible
+           for the developers. JavaScript small bit of code you can test
+           easily on Console Panel (inside Developer Tools) at a time
+           browser interpret return output result. In-short easy language
+           to get pick up in development.</p>
+
+        <li><span class="listTitle">Browser Compatible:&nbsp;&nbsp;&nbsp;</span></li>
+       <p class="contentData">The biggest advantages to a JavaScript having a
+           ability to support all modern browser and produce the same result.</p>
+
+        <li><span class="listTitle">Make XMLHttpRequest() Object:&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">XMLHttpRequest is special JavaScript object that was
+            designed by Microsoft. XMLHttpRequest object call as a asynchronous HTTP
+            request to the Server for transferring data both side without reloading the page.</p>
+    </ul>
+    <!------------------------------------>
+
+    <!--Disadvantage section-->
+    <a id="disadv"></a>
+    <span class="contentHeader">Disadvantage</span>
+    <p class="contentData">
+        Biggest disadvantages to a JavaScript, code visible to everyone.
+    </p>
+    <ul class="list">
+        <li><span class="listTitle">Code Always Visible:&nbsp;&nbsp;&nbsp;</span></li>
+       <p class="contentData">The biggest disadvantages is code always visible to
+           everyone anyone can view JavaScript code.</p>
+
+        <li><span class="listTitle">Bit of Slow execute:&nbsp;&nbsp;&nbsp;</span></li>
+       <p class="contentData">No matter how much fast JavaScript interpret,
+           JavaScript DOM (Document Object Model) is slow and will be a never
+           fast rendering with HTML.</p>
+
+        <li><span class="listTitle">Stop Render:&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">JavaScript single error can stop to render
+            with entire site. However browsers are extremely tolerant of JavaScript errors.</p>
+    </ul>
+    <!----------------------->
+
+    <!--Usage section-->
+    <a id="usage"></a>
+    <span class="contentHeader">Usage</span>
+    <p class="contentData">
+        Biggest disadvantages to a JavaScript, code visible to everyone.
+    </p>
+    <ul class="list">
+        <li><span class="listTitle">Web Development / Web Applications&nbsp;&nbsp;&nbsp;</span></li>
+       <p class="contentData"><b>JavaScript</b> is a client-side programming language which helps web developer to do <b>Web Application
+        Development</b> and make dynamic and interactive <b>web</b> pages by implementing custom client-side scripts.
+        <b>Developers</b> can also <b>use</b> cross-platform runtime engines like Node.<b>js</b> to write
+           server-side code in <b>JavaScript</b>
+       </p>
+
+        <li><span class="listTitle">Games&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">There is a number of frameworks that enable <b>JavaScript</b> applications
+            to run on mobile and on desktop, and there is a number of <b>game development</b> frameworks for
+            <b>JavaScript</b>. One of the major players in <b>game development</b>, Unity, <b>used</b> to have
+            a dialect of <b>JavaScript</b> as its scripting language.</p>
+
+        <li><span class="listTitle">Server applications&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">Node JS is built on Chrome's Javascript runtime for
+            building fast and scalable network applications.
+        <br> It uses event-driven, lightweight and efficient applications
+            which are to be distributed over the systems with the help of a server.
+            Javascript is used to handle HTTP requests and generate contents.</p>
+    </ul>
+    <!----------------------->
+
+    <!--Program example section-->
+    <a id="prog"></a>
+    <span class="contentHeader">Program example</span>
+    <ul class="list">
+        <li><span class="listTitle">Inner HTML Example link&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">
+            This program adds two number and displays the result in P tag using innerHTML
+        </p>
+        <img src="img/ex1.PNG" height="200">
+        <br>
+        <li><span class="listTitle">Alert box number addition&nbsp;&nbsp;&nbsp;</span></li>
+        <p class="contentData">
+            This program takes two number from user, adds them, and then displays the result to user in alert box
+        </p>
+        <img src="img/ex2.PNG" height="250">
+        <br>
+    </ul>
+    <!----------------------->
+    </p>
+</div>
+<h3 align="center">&COPYGroup 5 - Mobile Web Dev</h3>
+</body>
+
+</html>
